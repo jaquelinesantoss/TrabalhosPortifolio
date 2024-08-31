@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linguagens de Programação - Form </title>
+</head>
+<body>
+  <form action="" method="POST">
+    <fieldset>Formulário Linguagens de Programação
+      <br>
+      <br>
+      <label for="nome">NOME </label>
+      <input type="text" name="nome" placeholder="Digite seu nome" size="60" maxlength="60">
+      <br>
+      <br>
+      <label for="senha">SENHA </label>
+      <input type="password" name="senha" placeholder="Digite senha" size="60" maxlength="15">
+      <br>
+      <br>
+
+      <fieldset>
+        <label for="linguagem">Linguagem que tem interesse</label>
+        <br>
+        <br>
+        <input type="checkbox" name="linguagem[]" value="cbuilder"> C++
+        <input type="checkbox" name="linguagem[]" value="java"> Java
+        <input type="checkbox" name="linguagem[]" value="js"> JavaScript
+        <input type="checkbox" name="linguagem[]" value="php"> PHP
+        <input type="checkbox" name="linguagem[]" value="python"> Python
+        <input type="checkbox" name="linguagem[]" value="cobol"> Cobol 
+
+      </fieldset>
+
+      <fieldset>
+        <label for="linguagemescolhida">Linguagem que irá cursar
+          <br>
+          <br>
+          <input type="radio" name="curso" value="cbuilder"> C++
+          <input type="radio" name="curso" value="java"> Java
+          <input type="radio" name="curso" value="js"> JavaScript
+          <input type="radio" name="curso" value="php"> PHP
+          <input type="radio" name="curso" value="python"> Python
+          <input type="radio" name="curso" value="cobol"> Cobol
+      </fieldset>
+
+
+      <fieldset>
+        <label for="curso">Cursos que já fez na Escola</label>
+        </br>
+        </br>
+       <select name="escola">
+       <option>Selecione</option>
+       <option value="c++">C++</option>
+       <option value="java">Java</option>
+       <option value="js">JavaScript</option>
+       <option value="php">PHP</option>
+       <option value="python">Python</option>
+       <option value="cobol">Cobol</option>
+       </select>
+         
+        </fieldset> 
+
+
+        <fieldset>
+          <label for="linguagemdomina">Linguagem que já domina</label>
+          </br>
+          </br>
+         <select name="D1" size = "5" multiple>
+          <option value="c++">C++</option>
+          <option value="java">Java</option>
+          <option value="js">JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="python">Python</option>
+          <option value="cobol">Cobol</option>
+         </select>
+         </fieldset>
+                
+         <br>
+         <label for="mensagem">Mensagem:</label>
+         </br>
+         </br>
+          <textarea name="opiniao" rows="5" cols="40" placeholder="Digite aqui sua mensagem"></textarea>
+          
+         
+         <br>
+         <br>
+         
+         <input name="Submit" type="submit" id="Submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
